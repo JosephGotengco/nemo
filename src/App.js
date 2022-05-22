@@ -1,11 +1,11 @@
 import "./App.css";
 
-import { Landing } from "./pages/Landing";
+import { Character } from "./pages/Character";
 
 export const App = () => {
   return (
     <div className="App">
-      <Landing />
+      <Character />
     </div>
   );
 };
