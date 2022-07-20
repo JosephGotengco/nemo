@@ -1,11 +1,13 @@
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
 
-import { Character } from "./pages/Character";
+import { Character, Landing } from "./pages";
 
-export const App = () => {
-  return (
-    <div className="App">
-      <Character />
-    </div>
-  );
-};
+export const App = () => (
+  <div className="App">
+    <Routes>
+      <Route path="/" element={<Landing />} />
+      <Route path="/character/:name" strict caseSensitive element={<Character />} />
+    </Routes>
+  </div>
+);

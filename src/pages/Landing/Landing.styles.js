@@ -36,12 +36,12 @@ export const CharacterCardWrapper = styled.a`
 export const CharacterCard = styled.img`
   height: 545px;
   width: 170px;
-  transition: width 0.4s;
+  transition: transform ease-in-out 0.4s;
   object-fit: cover;
   ${({ margin }) => margin && `margin: ${margin}`};
 
   &:hover {
-    width: 250px;
+    transform: scale(1.2);
   }
 `;
 
@@ -63,8 +63,7 @@ export const CharacterSection = styled(FlexWrapper)`
 
 export const Subtitle = styled.p`
   font-family: "Playfair Display SC", serif;
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 5%;
+  font-size: 18px;
+  font-weight: 500;
   color: ${palette.text};
 `;
